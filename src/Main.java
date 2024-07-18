@@ -62,9 +62,10 @@ public class Main {
         System.out.println("Всего работников в компании — " + totalWorkers + " человек.");
 
         //задача №8(2)
-        var maxWorker = totalWorkers + 94;
-        var maxHours = maxWorker * 8;
-        System.out.println("Если в компании работает " + maxWorker + " человек, то всего " + maxHours + " часов работы может быть поделено между сотрудниками.");
+        var addedEmployees = 94;
+        totalWorkers  = totalWorkers + addedEmployees;
+        var maxHours = everyWorker * totalWorkers;
+        System.out.println("Если в компании работает " + totalWorkers + " человек, то всего " + maxHours + " часов работы может быть поделено между сотрудниками.");
 
     }
 }
